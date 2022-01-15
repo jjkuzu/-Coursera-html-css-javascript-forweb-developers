@@ -1,1 +1,111 @@
+/* underlying style for everything */
+/************************************************************/
 
+* {
+	box-sizing: border-box;
+}
+
+/*headings*/
+/************************************************************/
+
+h1, h3, p {
+	font-family: "Courier", Times, serif;
+}
+h1, h3 {
+	text-align: center;
+}
+h3 {
+	border: 3px solid black;	
+	position: absolute;
+	right: -3px;
+	top: -3px;
+	width: 120px;
+	height: 1.5em;
+	padding: 0;
+	margin: 0;
+}
+
+/*Chicken Beef Sushi heading colours*/
+/************************************************************/
+
+h3.firstItem {
+	background-color: #d59898;
+}
+h3.secondItem {
+	background-color: #c14543;
+	color: white;
+}
+h3.thirdItem {
+	background-color: #E5d198;
+}
+
+/*text paragraphs*/
+/************************************************************/
+
+p {
+	background-color: #999999;
+	font-weight: bolder;
+	width: 100%;
+	padding: 2em 1em 1em 1em;
+	margin: 0;
+}
+
+/*boxes template*/
+/************************************************************/
+
+	div.column1, div.column2, div.column3  {
+		background-color: #999999;
+		width: 30%;
+		border: 3px solid black;
+	}	 
+
+/* Desktop version layout */
+/************************************************************/
+
+@media (min-width: 992px) {
+
+	div.column1 {
+		position: relative;
+		margin-left: 1.5em;
+		float: left;
+	}	 
+	div.column2 {
+		position: absolute;
+		left: 35%;
+		}
+	div.column3 {
+		position: relative;
+		margin-right: 1.5em;
+		float: right;
+	}	 
+	
+}
+
+/* Tablet version layout */
+/************************************************************/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	div.column1  {
+		float: left;
+		width: 46%;
+		position: relative;
+		margin-bottom: 1.8em;
+		margin-left: 1.5em;
+	}	 
+	div.column2 {
+		float: right;
+		width: 46%;
+		position: relative;
+		margin-bottom: 1.8em;
+		margin-right: 1.5em;
+	}	
+	div.column3 {
+		clear: both;
+		float: left;
+		width: 95%;
+		position: relative;
+		left: 2.5%;
+		right: 2.5%;
+		margin-bottom: 1.8em;
+	}
+}
