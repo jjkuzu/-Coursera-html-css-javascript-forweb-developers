@@ -1,0 +1,120 @@
++/* underlying style for everything */
+/************************************************************/
+
+* {
+	box-sizing: border-box;
+}
+
+/*headings*/
+/************************************************************/
+
+h1, h3, p {
+	font-family: "Courier", Times, serif;
+}
+h1 {
+	text-align: center;
+}
+h3 {
+	text-align: center;
+	line-height:  1.5em;
+}
+/*Chicken Beef Sushi div titles and colours*/
+/************************************************************/
+
+h3 {
+	border: 0.25em solid black;	
+	position: relative;
+	float: right;
+	right: -0.2em;
+	top: -0.2em;
+	width: 7em;
+	height: 1.5em;
+	padding: 0;
+	margin: 0;
+}
+h3.firstItem {
+	background-color: #d59898;
+}
+h3.secondItem {
+	background-color: #c14543;
+	color: white;
+}
+h3.thirdItem {
+	background-color: #E5d198;
+}
+
+/*text paragraphs*/
+/************************************************************/
+
+p {
+	background-color: #999999;
+	font-weight: bolder;
+	padding: 3em 1em 1em 1em;
+	margin: 0;
+}
+
+/*boxes template*/
+/************************************************************/
+
+	div.column1, div.column2, div.column3  {
+		background-color: #999999;
+		border: 0.25em solid black;
+	}	 
+
+/* Desktop version layout */
+/************************************************************/
+
+@media (min-width: 992px) {
+	div.allColumns {
+		position: relative;
+	}
+	div.column1 {
+		float: left;
+		margin-left: 3em;
+		width: 28%;
+	}	 
+	div.column2 {
+		position: absolute;
+		top: 0;
+		left: 35.75%;
+		width: 28%;
+	}
+	div.column3 {
+		float: right;
+		margin-right: 3em;
+		width: 28%;
+	}	 
+}
+
+/* Tablet version layout */
+/************************************************************/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	div.allColumns {
+		position: relative;
+	}
+
+
+	div.column1  {
+		float: left;
+		width: 46%;
+		position: relative;
+			margin-left: 1em;
+	}	 
+	div.column2 {
+		position: relative;
+		float: right;
+		width: 46%;
+		margin-right: 1em;
+	}	
+	div.column3 {
+		clear: both;
+		float: left;
+		width: 95.75%;
+		position: relative;
+		margin-top: 1.2em;
+		Margin-left: 1em;
+		margin-bottom: 1.8em;
+	}
+}

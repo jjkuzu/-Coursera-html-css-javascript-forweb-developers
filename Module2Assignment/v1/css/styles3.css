@@ -1,0 +1,133 @@
+/*Underlying style for everything */
+/************************************************************/
+
+* {
+	box-sizing: border-box;
+}
+
+/*Titles*/
+/************************************************************/
+
+div.centerOnPage {
+	margin: auto;
+	width: 95%;
+	padding: 0;
+}
+
+h1, h3, p {
+	font-family: "Courier", Times, serif;
+}
+h1 {
+	text-align: center;
+	font-size: 175%;
+}
+h3 {
+	text-align: center;
+	line-height:  1.5em;
+	font-size: 125%;
+}
+
+/*Chicken Beef Sushi titles and colours*/
+/************************************************************/
+
+h3 {
+	border: 0.25em solid black;	
+	position: relative;
+	float: right;
+	right: -0.2em;
+	top: -0.2em;
+	width: 7em;
+	height: 2em;
+	padding: 0;
+	margin: 0;
+}
+
+h3.firstItem {
+	background-color: #d59898;
+}
+h3.secondItem {
+	background-color: #c14543;
+	color: white;
+}
+h3.thirdItem {
+	background-color: #E5d198;
+}
+
+/*Text paragraphs*/
+/************************************************************/
+
+p {
+	background-color: #999999;
+	font-weight: bolder;
+	padding: 3em 1em 1em 1em;
+	margin: 0;
+}
+
+/*Boxes template*/
+/************************************************************/
+
+div.column1, div.column2, div.column3  {
+	background-color: #999999;
+	border: 0.25em solid black;
+}	 
+
+/* Desktop version layout */
+/************************************************************/
+
+@media (min-width: 992px) {
+
+	div.column1 {
+		float: left;
+		display: inline-block;		
+		position: relative;
+		width: 30%;
+		margin: 1.5em .75em 2em .75em;
+	}	 
+	div.column2 {
+		float: left;
+		display: inline-block;		
+		position: relative;
+		width: 30%;
+		margin: 1.5em .75em 2em .75em;
+	}
+	div.column3 {
+		float: left;
+		display: inline-block;		
+		position: relative;
+		width: 30%;
+		margin: 1.5em .75em 2em .75em;
+	}
+}
+
+/* Tablet version layout */
+/************************************************************/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	div.column1 {
+		float: left;
+		position: relative;
+		width: 46.5%;
+		margin: .75em;
+	}
+ 	div.column2 {
+		float: right;
+		position: relative;
+		width: 46.5%;
+		margin: .75em;
+	}	
+	div.column3 {
+		float: left;
+		margin: 1.5em .75em 2em .75em;
+	}
+}
+
+/* Smaller-than-tablet version layout */
+/************************************************************/
+
+@media (max-width: 767px) {
+	div.column1, div.column2, div.column3 {
+		margin: 0 1em 2em 1em;
+	}
+}
+
